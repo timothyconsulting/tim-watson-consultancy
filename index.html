@@ -71,8 +71,25 @@ footer{background:var(--navy);color:white;padding:18px 0;font-size:12px}
  .wrap,.nav,.services,.about-inner,.contact-inner,.footer-inner{width:100%}
  .nav{padding:14px 20px}
  .hero{display:flex;flex-direction:column-reverse;min-height:0}
- .hero-photo{height:clamp(260px,72vw,390px);min-height:0;max-height:none;border-radius:0 0 0 34px;margin-left:18px}
- .hero-photo img{height:100%;min-height:0;object-position:56% 43%}
+.hero-photo{
+  height:auto;
+  min-height:0;
+  max-height:none;
+  overflow:visible;
+  border-radius:0 0 0 34px;
+  margin-left:18px;
+  background:var(--blue);
+}
+
+.hero-photo img{
+  width:100%;
+  height:auto;
+  min-height:0;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+  border-radius:0 0 0 34px;
+}
  .hero-copy{padding:34px 22px 42px}
  .kicker{font-size:10px;margin-bottom:15px}
  h1{font-size:clamp(47px,13vw,64px);margin-bottom:18px}
